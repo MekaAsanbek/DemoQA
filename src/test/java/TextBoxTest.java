@@ -1,10 +1,12 @@
 
 import com.demoqa.entities.TextBoxEntity;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class TextBoxTest extends BaseTest {
 
+@Listeners(com.demoqa.listener.ScreenshotListener.class)
+public class TextBoxTest extends BaseTest {
 
     @Test
     public void textBoxTest() throws InterruptedException {

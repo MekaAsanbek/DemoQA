@@ -1,6 +1,8 @@
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.demoqa.listener.ScreenshotListener.class)
 public class ProgressBarTest extends BaseTest{
 
     @Test(description = "")
