@@ -12,6 +12,10 @@ import org.testng.ITestResult;
 public class ScreenshotListener implements ITestListener{
     WebDriver driver = DriverManager.getDriver();
 
+    public ScreenshotListener(){
+
+    }
+
     @Override
     public void onTestFailure(ITestResult result) {
         if (driver != null) {
